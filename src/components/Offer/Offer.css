@@ -1,0 +1,256 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 6.4rem;
+}
+
+.hero {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4.8rem;
+  margin-bottom: 6.4rem;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #13183f;
+}
+
+.hero-text p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #83869a;
+  margin-top: 2.4rem;
+}
+
+.hero-text button {
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #fff;
+  border: none;
+  padding: 1.6rem 3.2rem;
+  border-radius: 28px;
+  background-image: linear-gradient(to bottom, #ff6f48, #f02aa6);
+  margin-top: 4rem;
+  cursor: pointer;
+}
+
+.hero-img {
+  width: 32.7rem;
+  height: 30.1rem;
+  object-fit: contain;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 6rem;
+  padding: 0 2rem;
+  margin-top: 6.4rem;
+}
+
+h2 {
+  padding: 3.2rem;
+  border-radius: 15px;
+  box-shadow: 0 25px 50px 0 rgba(6, 22, 141, 0.04);
+  background-image: linear-gradient(to bottom, #ff6f48, #f02aa6);
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 6.4rem 3.2rem 4rem;
+  border-radius: 15px;
+  box-shadow: 0 25px 50px 0 rgba(6, 22, 141, 0.04);
+  background-color: #fff;
+  position: relative;
+}
+
+.content img {
+  width: 56px;
+  height: 56px;
+  gap: 8px;
+  padding: 0;
+  border-radius: 999px;
+  background-image: linear-gradient(to bottom, #ff6f48, #f02aa6);
+  position: absolute;
+  top: -3rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #13183f;
+}
+
+.content p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #83869a;
+  margin-top: 2.4rem;
+}
+
+.content span {
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #f74780;
+  margin-top: 2.4rem;
+  cursor: pointer;
+}
+
+.content span:hover {
+  opacity: 0.6;
+}
+
+.content span:active {
+  opacity: 0.4;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  opacity: 0.5;
+}
+
+@media only screen and (min-width: 48rem) {
+  main {
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 0 4.4rem;
+    flex-direction: row;
+    gap: 4rem;
+    position: relative;
+    max-width: 50rem;
+  }
+
+  .hero-img {
+    content: url(/public/images/image-hero-tablet.png);
+    width: 70.7rem;
+    height: 56rem;
+    position: absolute;
+    top: -52%;
+    left: 105%;
+  }
+
+  .content-section {
+    display: grid;
+    grid-template-rows: 35rem 35rem;
+    grid-template-columns: repeat(2, 35rem);
+    padding: 0 4.4rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+  }
+
+  .design {
+    width: 35rem;
+    height: 31.5rem;
+  }
+
+  .head-cont {
+    width: 35rem;
+    height: 30.5rem;
+    box-shadow: 0 25px 50px 0 rgba(6, 22, 141, 0.04);
+    background-image: linear-gradient(to bottom, #ff6f48, #f02aa6);
+    background-size: cover;
+    border-radius: 12px;
+  }
+
+  h2 {
+    padding: 6.4rem 3.2rem;
+    border-radius: unset;
+    box-shadow: unset;
+    background-image: unset;
+  }
+
+  .content p {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (min-width: 90rem) {
+  main {
+    margin-top: 17.4rem;
+    overflow: hidden;
+    border-radius: 50px;
+  }
+
+  .hero {
+    padding: 0 16rem;
+    gap: 3.2rem;
+    max-width: 90rem;
+  }
+
+  h1 {
+    font-size: 5.6rem;
+  }
+
+  .hero-img {
+    content: url(/public/images/image-hero-desktop.png);
+    width: 80.7rem;
+    height: 68rem;
+    object-fit: cover;
+    position: absolute;
+    top: -70%;
+    left: 99%;
+  }
+
+  .content-section {
+    gap: 3.2rem;
+    padding: 0 16rem;
+    margin-top: 12.8rem;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  .head-cont,
+  .design {
+    height: 31.5rem;
+  }
+
+  .content-section {
+    grid-template-rows: 35rem 35rem;
+    grid-template-columns: repeat(3, 35rem);
+    padding: 0 16rem;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+}

@@ -1,0 +1,44 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+header img {
+  width: 7.9rem;
+  height: 2rem;
+  object-fit: contain;
+}
+
+header button {
+  border: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #fff;
+  padding: 1.6rem 3.2rem;
+  border-radius: 28px;
+  background-color: #13183f;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 48rem) {
+  header {
+    padding: 0 17.8rem;
+  }
+}
+
+@media only screen and (min-width: 90rem) {
+  body {
+    margin: 0 auto;
+    max-width: 300rem;
+    overflow-x: hidden;
+  }
+
+  header {
+    padding: 0 16rem;
+    max-width: 100%;
+  }
+}

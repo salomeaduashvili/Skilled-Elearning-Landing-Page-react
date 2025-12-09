@@ -1,0 +1,57 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  margin-top: 8rem;
+  background-color: #13183f;
+  background-size: cover;
+  min-height: 10rem;
+  min-width: 100%;
+}
+
+footer img {
+  width: 7.9rem;
+  height: 2rem;
+  object-fit: contain;
+}
+
+footer button {
+  border: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #fff;
+  padding: 1.2rem 2.4rem;
+  margin: 2.4rem 2rem;
+  border-radius: 28px;
+  background-image: linear-gradient(to bottom, #4851ff, #f02aa6);
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  opacity: 0.5;
+}
+
+@media only screen and (min-width: 48rem) {
+  footer {
+    padding: 0 17.5rem;
+    margin-top: 14.4rem;
+    max-width: 108rem;
+  }
+}
+
+@media only screen and (min-width: 90rem) {
+  footer {
+    padding: 0 16rem;
+    max-width: unset;
+  }
+
+  footer button {
+    padding: 1.2rem 3.2rem;
+  }
+}
