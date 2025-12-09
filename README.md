@@ -46,7 +46,7 @@ App.jsx
 ## 🚀 URL/Live page:
 
 - Deployed on Vercel.
-- Link:
+- Link: https://skilled-elearning-landing-page-reac.vercel.app/
 
 ---
 
